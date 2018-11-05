@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>
+         <%= title + ' - ' + author_info.name %>
+      </title>
+      <%- include('../partials/refs') %>
+   </head>
+   <body>
+      <%- include('../partials/navbar') %>
+      <main class="container center-align">
+        <div class="row left-align">
+          <h1>About me</h1>
+        </div>
+        <div class="card card-padded">
+          <div class="row">
+            <div class="col s8 flow-text left-align">I'm Koen Sparreboom from Oostzaan, the Netherlands and I was born on the 9th of February in 2000. My passion is programming for multiple reasons one of which is the sense of improvement since there's always something new to learn whether it's a new language, a new API, a new concept or so much more. My strongest points as of right now are Unity with C#, Java, JavaScript and C++ and in teams we use SCRUM.  In my freetime I like to talk with people, improve my programming by looking up documentations and trying new things, I play games like Super Mario and Counter Strike and I play guitar.</div>
+              <div class="col s4"><img src="https://www.fraude.nl/wp-content/uploads/2017/08/Person-placeholder.jpg" alt="placeholder" style="width: 100%"></div>
+            </div>
+         </div>
+      </main>
+      <%- include('../partials/footer') %>
+      <script>
+         M.AutoInit();
+      </script>
+   </body>
+</html>

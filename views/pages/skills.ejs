@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>
+         <%= title + ' - ' + author_info.name %>
+      </title>
+      <%- include('../partials/refs') %>
+   </head>
+   <body>
+      <%- include('../partials/navbar') %>
+      <main class="container">
+         <div class="row">
+            <% for(var i=0; i < skills.length; i++) { %>
+                <%- include('../partials/templates/skill.ejs', {skill: skills[i]}) %>
+            <% } %>
+         </div>
+      </main>
+      <%- include('../partials/footer') %>
+      <script>
+         M.AutoInit();
+      </script>
+   </body>
+</html>

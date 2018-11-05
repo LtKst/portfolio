@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>
+         <%= title + ' - ' + author_info.name %>
+      </title>
+      <%- include('../partials/refs') %>
+   </head>
+   <body>
+      <%- include('../partials/navbar') %>
+      <main class="container">
+      <div class="row">
+        <h1>My projects</h1>
+      </div>
+        <div class="row card">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">search</i>
+                <input oninput="search(this.value)" placeholder="Search" type="text" autofocus>
+            </div>
+        </div>
+
+        
+        <div class="row">
+            <% if (projects.length < 1) { %>
+                <h2>No projects to display...</h2>
+            <% } else { %>
+                <% for(var i=0; i < projects.length; i++) { %>
+                    <%- include('../partials/templates/project.ejs', {project: projects[i]}); %>
+                <% } %>
+            <% } %>
+        </div>
+
+      </main>
+      <a id="goTop" class="btn-floating btn-large waves-effect waves-light">
+      <i class="large material-icons">arrow_upward</i>
+      </a>
+      <%- include('../partials/footer') %>
+      <script src="/js/projectFilter.js"></script>
+      <script src="/js/topButton.js"></script>
+      <script src="/js/hoverPlay.js"></script>
+      <script>
+         M.AutoInit();
+         
+         document.addEventListener('DOMContentLoaded', function () {
+         var elems = document.querySelectorAll('.chips');
+         var instances = M.Chips.init(elems, {
+         placeholder: 'Filter tags',
+         secondaryPlaceholder: '+Tag',
+         autocompleteOptions: {
+            data: {
+                "2D": null,
+                "3D": null,
+                "API": null,
+                "Application": null,
+                "C#": null,
+                "C++": null,
+                "CSS": null,
+                "Discord": null,
+                "Electron": null,
+                "Game": null,
+                "HTML": null,
+                "Java": null,
+                "JavaScript": null,
+                "Multiplatform": null,
+                "Node.js": null,
+                "Python": null,
+                "SFML": null,
+                "School assignment": null,
+                "Spotify": null,
+                "Team": null,
+                "Unity": null
+            },
+            limit: Infinity,
+            minLength: 1
+         }
+         });
+         });
+      </script>
+   </body>
+</html>

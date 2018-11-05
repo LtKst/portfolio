@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        <%= title + ' - ' + author_info.name %>
+    </title>
+    <%- include('../../partials/refs') %>
+</head>
+
+<body class="has-fixed-sidenav">
+    <a href="#" data-target="slide-out" class="sidenav-trigger">
+        <i class="material-icons">menu</i>
+    </a>
+
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+                <div class="background" style="background-color: #f44336">
+                </div>
+                <a href="#name">
+                    <span class="white-text name">Koen Sparreboom</span>
+                </a>
+                <a href="#email">
+                    <span class="white-text email">koensparreboom@gmail.com</span>
+                </a>
+            </div>
+        </li>
+        
+        <li>
+            <a href="#!">
+                <i class="material-icons">class</i>Projects</a>
+        </li>
+        <li>
+            <a href="#!">
+                <i class="material-icons">star</i>Skills</a>
+        </li>
+        <li>
+            <a href="#!">
+                <i class="material-icons">equalizer</i>Statistics</a>
+        </li>
+    </ul>
+
+    <script>
+        M.AutoInit();
+    </script>
+</body>
+
+</html>

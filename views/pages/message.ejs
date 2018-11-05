@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>
+         <%= title + ' - ' + author_info.name %>
+      </title>
+      <%- include('../partials/refs') %>
+   </head>
+   <body>
+      <%- include('../partials/navbar') %>
+      <main class="container center-align">
+        <div class="card card-padded">
+            <h1><%= message %></h1>
+            <h2><%= info %></h2>
+            <% if (typeof image !== 'undefined') { %>
+              <%- '<img src="' + image.src + '" alt="' + image.alt + '" />'; %>
+            <% } %>
+         </div>
+      </main>
+      <%- include('../partials/footer') %>
+      <script>
+         M.AutoInit();
+      </script>
+   </body>
+</html>

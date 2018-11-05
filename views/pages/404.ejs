@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>
+         <%= title + ' - ' + author_info.name %>
+      </title>
+      <%- include('../partials/refs') %>
+   </head>
+   <body>
+      <%- include('../partials/navbar') %>
+      <main class="container center-align">
+         <div class="card card-padded">
+            <h1>404</h1>
+            <h2>This page wasn't found...</h2>
+            <img src="https://media.giphy.com/media/jWexOOlYe241y/giphy.gif" alt="Confused John Travolta"/>
+         </div>
+      </main>
+      <%- include('../partials/footer') %>
+      <script>
+         M.AutoInit();
+      </script>
+   </body>
+</html>

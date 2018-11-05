@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>
+         <%= title + ' - ' + author_info.name %>
+      </title>
+      <%- include('../partials/refs') %>
+   </head>
+   <body>
+      <%- include('../partials/navbar') %>
+      <main class="container">
+        <div class="row left-align">
+            <h1>Contact</h1>
+        </div>
+         <div class="card card-padded">
+            <h5>Send me an email at <a href="mailto:<%= author_info.email %>" target="_top"><%- author_info.email  %></a> or use the contact form below!</h4>
+            <br><br>
+            <div class="row">
+               <form method="post" action="/mail" class="col l6 m12">
+                  <div class="row">
+                     <div class="input-field col s6">
+                        <i class="material-icons prefix grey-text text-darken-2">face</i>
+                        <input id="first_name" name="mail[first_name]" type="text" class="validate" required autofocus>
+                        <label for="first_name">First name</label>
+                     </div>
+                     <div class="input-field col s6">
+                        <input id="last_name" name="mail[last_name]" type="text" class="validate" required>
+                        <label for="last_name">Last name</label>
+                     </div>
+                     <div class="input-field col s12">
+                        <i class="material-icons prefix grey-text text-darken-2">email</i>
+                        <input id="email" name="mail[email]" type="email" class="validate" required>
+                        <label for="email" data-error="Write your email again please!" data-success="OK, you're good!">Email</label>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="input-field col s12">
+                        <i class="material-icons prefix grey-text text-darken-2">gesture</i>
+                        <input id="subject" name="mail[subject]" type="text" class="validate" required>
+                        <label for="subject">Subject</label>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="input-field col s12">
+                        <i class="material-icons prefix grey-text text-darken-2">create</i>
+                        <textarea id="message" name="mail[message]" class="materialize-textarea" required></textarea>
+                        <label for="message">Message</label>
+                     </div>
+                  </div>
+                  <div class="row">
+                    <div class="g-recaptcha" data-sitekey="6LdORXcUAAAAAN1svlc77P4yb72Eu6Hbuhtmy0XA"></div>
+                  </div>
+                  <div class="row">
+                     <button class="btn waves-effect waves-light valign-wrapper" type="submit" name="action"><i class="material-icons left">send</i>Send</button>
+                  </div>
+               </form>
+               <div class="col l6 m12">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2432.4813949938884!2d4.8699383159741485!3d52.434193850336975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5fd537659c3c9%3A0xd2e73030a0b43659!2sStrekel+67%2C+1511+KJ+Oostzaan!5e0!3m2!1snl!2snl!4v1529495608619" height="450" frameborder="0" style="width: 100%; border:0" allowfullscreen></iframe>
+               </div>
+            </div>
+         </div>
+      </main>
+      <%- include('../partials/footer') %>
+      <script>
+         M.AutoInit();
+      </script>
+   </body>
+</html>

@@ -1,0 +1,1 @@
+.black-on-white,body{transition:all .5s}body{display:flex;min-height:100vh;flex-direction:column;background-color:#eee}main{flex:1 0 auto;padding-top:1em}.card-padded{padding:1em}#goTop{transition:all 1s;position:fixed;right:2em;bottom:-5em}.hover-opacity{opacity:.7}.hover-opacity-transition{transition:opacity .3s}.hover-opacity:hover{opacity:1}.hidden{display:none}

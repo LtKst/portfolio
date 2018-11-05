@@ -1,0 +1,38 @@
+<nav>
+   <div class="nav-wrapper">
+      <a style="margin-left: .5em;" href="/" class="brand-logo">
+      <%- author_info.name.replace(/ /g,"&nbsp;"); %>
+      </a>
+      <a href="#" data-target="sidenav" class="sidenav-trigger">
+      <i class="material-icons">menu</i>
+      </a>
+      <ul class="right hide-on-med-and-down">
+         <li>
+            <a <% if (title === 'Home') { %> class="white-text" <% } %> href="/">Home</a>
+         </li>
+         <li>
+            <a <% if (title === 'About') { %> class="white-text" <% } %> href="/about">About</a>
+         </li>
+         <!--<li>
+            <a <% if (title === 'Skills') { %> class="white-text" <% } %> href="/skills">Skills</a>
+         </li>-->
+         <li>
+            <a <% if (title === 'Contact') { %> class="white-text" <% } %> href="/contact">Contact</a>
+         </li>
+      </ul>
+      <ul class="sidenav" id="sidenav">
+         <li>
+            <a <% if (title === 'Home') { %> class="white-text" <% } %> href="/">Home</a>
+         </li>
+         <li>
+            <a <% if (title === 'About') { %> class="white-text" <% } %> href="/about">About</a>
+         </li>
+         <!--<li>
+            <a <% if (title === 'Skills') { %> class="white-text" <% } %> href="/skills">Skills</a>
+         </li>-->
+         <li>
+            <a <% if (title === 'Contact') { %> class="white-text" <% } %> href="/contact">Contact</a>
+         </li>
+      </ul>
+   </div>
+</nav>

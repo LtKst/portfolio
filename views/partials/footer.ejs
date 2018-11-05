@@ -1,0 +1,46 @@
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">This portfolio is made with</h5>
+                <span class="chip no-select pointer">HTML</span>
+                <span class="chip no-select pointer">JavaScript</span>
+                <span class="chip no-select pointer">CSS</span>
+                <a href="https://materializecss.com/" target="_blank">
+                    <span class="waves-effect chip no-select">Materialize</span>
+                </a>
+                <span class="chip no-select pointer">Node.js</span>
+                <span class="chip no-select pointer">Express</span>
+                <span class="chip no-select pointer">❤</span>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Find me here</h5>
+                    <% author_info.social_media.forEach((e) => { %>
+                        <%-
+                            '<a style="font-size: 2em; margin-right: .2em" class="hover-opacity grey-text text-lighten-3" href="' + e.url + '">' +
+                            '<i class="fa fa-' + e.icon + '"></i></a>';
+                        %>
+                    <% }); %>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    Copyright &#x24B8; <%= author_info.name + ' ' + new Date().getFullYear() %>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <a class="hover-opacity white-text" href="http://github.com/ltkst/portfolio">Check out this portfolio on GitHub <i class="fa fa-github"></i></a>
+                    <!--<div class="switch">
+                        <label class="white-text">
+                            Dark theme
+                            <input onclick="setTheme(this.checked)" id="themeCheckBox" type="checkbox">
+                            <span class="lever"></span>
+                        </label>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,77 @@
+[{
+    "title": "C#",
+    "content": "Jadie zee scherp kan ik wel",
+    "icon": "csharp-plain",
+    "projects": [{
+        "title": "Example project",
+        "repository": "https://github.com/LtKst?tab=repositories"
+    }]
+}, {
+    "title": "Unity3D",
+    "content": "I'm super duper good at Unity3D",
+    "icon": "csharp-plain",
+    "projects": [{
+        "title": "Example project",
+        "repository": "https://github.com/LtKst?tab=repositories"
+    }]
+}, {
+    "title": "C++",
+    "content": "I'm super duper good at C++",
+    "icon": "cplusplus-plain",
+    "projects": [{
+        "title": "Example project",
+        "repository": "https://github.com/LtKst?tab=repositories"
+    }]
+}, {
+    "title": "GIT",
+    "content": "I'm super duper good at GIT",
+    "icon": "git-plain"
+}, {
+    "title": "Java",
+    "content": "I'm super duper good at Java",
+    "icon": "java-plain",
+    "projects": [{
+        "title": "Example project",
+        "repository": "https://github.com/LtKst?tab=repositories"
+    }]
+}, {
+    "title": "JavaScript",
+    "content": "I'm super duper good at JavaScript",
+    "icon": "javascript-plain",
+    "projects": [{
+        "title": "Example project",
+        "repository": "https://github.com/LtKst?tab=repositories"
+    }]
+}, {
+    "title": "HTML5",
+    "content": "I'm super duper good at HTML5",
+    "icon": "html5-plain",
+    "projects": [{
+        "title": "Example project",
+        "repository": "https://github.com/LtKst?tab=repositories"
+    }]
+}, {
+    "title": "CSS3",
+    "content": "I'm super duper good at CSS3",
+    "icon": "css3-plain",
+    "projects": [{
+        "title": "Example project",
+        "repository": "https://github.com/LtKst?tab=repositories"
+    }]
+}, {
+    "title": "Node.js",
+    "content": "I'm super duper good at Node.js",
+    "icon": "nodejs-plain",
+    "projects": [{
+        "title": "Example project",
+        "repository": "https://github.com/LtKst?tab=repositories"
+    }]
+}, {
+    "title": "Python",
+    "content": "I'm super duper good at Python",
+    "icon": "python-plain",
+    "projects": [{
+        "title": "Example project",
+        "repository": "https://github.com/LtKst?tab=repositories"
+    }]
+}]

@@ -1,0 +1,21 @@
+<div class="col l4 m6 s12">
+    <div class="card center">
+        <br>
+        <h1>
+            <i class="devicon-<%= skill.icon %> colored"></i>
+        </h1>
+        <p class="flow-text"><%- skill.title %></p>
+        <p class="light flow-text"><%- skill.content %></p>
+
+        <% if (skill.projects) { %>
+            <%- '<hr>Made with ' + skill.title + ':<br><br>' %>
+            
+            <% skill.projects.forEach((e) => { %>
+                <%- '<a href="' + e.repository + '">' + e.title + '</a>' %>
+            <% }); %>
+        <% } %>
+
+        <br>
+        <br>
+    </div>
+</div>

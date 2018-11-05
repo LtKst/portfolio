@@ -1,0 +1,22 @@
+{
+    "name": "Koen Sparreboom",
+    "occupation": "Gamedeveloper",
+    "email": "koensparreboom@gmail.com",
+    "social_media": [{
+        "name": "koensparreboom@gmail.com",
+        "url": "mailto:koensparreboom@gmail.com",
+        "icon": "envelope"
+    }, {
+        "name": "GitHub",
+        "url": "https://github.com/LtKst",
+        "icon": "github"
+    }, {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/koen-sparreboom-76bba314a/",
+        "icon": "linkedin"
+    }, {
+        "name": "Twitter",
+        "url": "https://twitter.com/LieutenantKst",
+        "icon": "twitter"
+    }]
+}

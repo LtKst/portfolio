@@ -1,0 +1,61 @@
+<%
+	var modalId = project.id + '-modal';
+	
+	project.tags.sort();
+	var tags = '';
+	
+	project.tags.forEach((e) => {
+	  tags += '<span class="chip no-select pointer indigo darken-4 white-text">' + e + '</span>';
+	});
+	
+	if (project.buttons) {
+	 var buttons = '';
+	 var iconButtons = '';
+	
+	 project.buttons.forEach((e) => {
+	     buttons += '<a href="' + e.href + '" class="waves-effect waves-light btn"><i class="fa fa-' + e.icon + ' left"></i>' + e.text + '</a> ';
+	     iconButtons += '<a href="' + e.href + '" class="waves-effect waves-light btn tooltipped" data-position="bottom" data-tooltip="' + e.text + '"><i class="fa fa-' + e.icon + '"></i></a> ';
+	 });
+	}
+	
+	buttons += '<a class="waves-effect waves-light btn" href="/' + project.title.toLowerCase().replace(/ /g,"-") + '"><i class="material-icons left">more_horiz</i>More info</a>';
+	//iconButtons += '<a class="waves-effect waves-light btn tooltipped" data-position="bottom" data-tooltip="More info" href="/' + project.title.toLowerCase().replace(/ /g,"-") + '"><i class="material-icons">more_horiz</i></a>';
+%>
+<div id='<%= project.id %>' class="project card card-padded row">
+	<div class="col m12 l6">
+		<div>
+			<h2 style="margin-top: 0">
+				<span class="project-title">
+				<%- project.title %>
+				</span>
+				<a <%- 'href="/' + project.title.toLowerCase().replace(/ /g,"-") + '"' %>  class="btn-floating waves-effect waves-light">
+				<i class="material-icons">menu</i>
+				</a>
+			</h2>
+			<%- tags %>
+			<br>
+			<p>
+				<%- project.description %>
+			</p>
+			<br>
+		</div>
+	</div>
+	<div class="col m12 l6">
+		<div>
+			<video class="responsive-video" loop muted>
+				<source src="<%= project.demo %>" type="video/mp4">
+			</video>
+
+			<!--<div class="material-placeholder">
+				<img class="materialboxed responsive-img" data-caption="<%= project.title %> demo" width="650" src="<%= project.image %>"
+					alt="<%= project.title %> demo">
+			</div>-->
+		</div>
+	</div>
+	<% if (project.buttons) { %>
+	<div class="right-align col s12">
+		<br>
+		<%- iconButtons %>
+	</div>
+	<% } %>
+</div>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>
+			<%= title + ' - ' + author_info.name %>
+		</title>
+		<%- include('../partials/refs') %>
+	</head>
+	<body>
+		<%- include('../partials/navbar') %>
+		<%
+			project.tags.sort();
+			var tags = '';
+			
+			project.tags.forEach((e) => {
+			     tags += '<span class="chip indigo darken-4 no-select pointer white-text">' + e + '</span>';
+			});
+			
+			if (project.buttons) {
+			    var buttons = '';
+			    var iconButtons = '';
+			
+			    project.buttons.forEach((e) => {
+			        buttons += '<a href="' + e.href + '" class="waves-effect waves-light btn"><i class="fa fa-' + e.icon + ' left"></i>' + e.text + '</a> ';
+			        iconButtons += '<a href="' + e.href + '" class="waves-effect waves-light btn"><i class="fa fa-' + e.icon + '"></i></a> ';
+			    });
+			}
+		%>
+		<main class="container">
+			<nav>
+				<div class="nav-wrapper">
+					<div class="col s12">
+						&nbsp;
+						<a href="/" class="breadcrumb">Home</a>
+						<%- '<a href="/' + project.title.toLowerCase().replace(/ /g, "-") + '" class="breadcrumb">' + project.title + '</a>' %>
+					</div>
+				</div>
+			</nav>
+			<div class="card card-padded">
+				<div>
+					<div class="row">
+						<div class="col l6 m12">
+							<h1 style="margin-top: 0"><%- project.title %></h1>
+							<%- '<span class="chip no-select pointer grey darken-4 white-text">' + project.status + '</span>' %>
+							<%- tags %>
+							<br>
+							<!--<%- '<span class="chip no-select pointer grey darken-4 white-text tooltipped" data-position="top" data-tooltip="' + project.developers + ' developers, ' + project.artists + ' artists">' + (project.developers + project.artists) + ' developers</span>' %>-->
+							<p><%- project.description %></p>
+							<br>
+						</div>
+						<div class="col l6 m12">
+							<video class="responsive-video" loop muted autoplay>
+								<source src="<%= project.demo %>" type="video/mp4">
+							</video>
+
+							<% if (project.developers + project.artists > 1) { %>
+								<table class="striped">
+									<thead>
+										<tr>
+											<th>Team</th>
+										</tr>
+									</thead>
+									<tr>
+										<td>Developers</td>
+										<td><%- project.developers %></td>
+									</tr>
+									<tr>
+										<td>Artists</td>
+										<td><%- project.artists %></td>
+									</tr>
+								</table>
+							<% } %>
+
+							<!--<div class="material-placeholder">
+								<img class="materialboxed responsive-img" style="width: 100%;" src="<%- project.image %>" alt="<%= project.title %> demo">
+							</div>-->
+						</div>
+					</div>
+				</div>
+				<div class="right-align">
+					<% if (project.buttons) { %>
+					<%- buttons %>
+					<% } %>
+				</div>
+			</div>
+		</main>
+		<%- include('../partials/footer') %>
+		<script>
+			M.AutoInit();
+		</script>
+	</body>
+</html>

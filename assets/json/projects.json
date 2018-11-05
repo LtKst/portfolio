@@ -1,0 +1,152 @@
+[{
+  "id": 1530731260850,
+  "title": "Saving Private Flint",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid, quod res alia tota est? Quod vestri non item. Tanta vis admonitionis inest in locis; Duo Reges: constructio interrete. Nihil illinc huc pervenit. Dici enim nihil potest verius. Negare non possum. Praeclare hoc quidem. Tibi hoc incredibile, quod beatissimum. Quae sequuntur igitur? Sed haec omittamus; Haeret in salebra. Beatus sibi videtur esse moriens. Ut optime, secundum naturam affectum esse possit. Negare non possum. Sint modo partes vitae beatae. Comprehensum, quod cognitum non habet? Erat enim Polemonis. Et quidem, inquit, vehementer errat; Quare attende, quaeso.",
+  "tags": [
+    "3D",
+    "Unity",
+    "C#",
+    "Game",
+    "Team"
+  ],
+  "status": "Completed",
+  "developers": 3,
+  "artists": 4,
+  "demo": "project_demos/mythe2.mp4",
+  "buttons": [{
+      "text": "GitHub",
+      "icon": "github",
+      "href": "https://github.com/lghenk/Mythe-Project"
+    },
+    {
+      "text": "Download",
+      "icon": "cloud-download",
+      "href": "https://github.com/lghenk/Mythe-Project/releases"
+    }
+  ]
+}, {
+  "id": 1530731261657,
+  "title": "Pictures",
+  "description": "This is a multiplatform minimal picture viewing application made with <a href='https://electronjs.org/'>Electron</a>. The current tested and working platforms are Windows and MacOs. I made this project to improve my JavaScript, Node.js & multiplatform skills. The general styling idea is to make it as minimal as possible, no borders and the top bar disappears.",
+  "tags": [
+    "JavaScript",
+    "Node.js",
+    "Electron",
+    "Application",
+    "Multiplatform"
+  ],
+  "status": "Ongoing",
+  "developers": 1,
+  "artists": 0,
+  "demo": "project_demos/pictures.mp4",
+  "buttons": [{
+    "text": "GitHub",
+    "icon": "github",
+    "href": "https://github.com/LtKst/pictures"
+  }]
+}, {
+  "id": 1530731262603,
+  "title": "Destructible terrain",
+  "description": "A small game with a dynamic destructible terrain made in C++ with SFML and Box2D. This project was made to further enhance my knowledge of using libraries in C++",
+  "tags": [
+    "C++",
+    "SFML",
+    "Box2D",
+    "2D",
+    "Game"
+  ],
+  "demo": "project_demos/destructible_terrain.mp4",
+  "status": "Completed",
+  "developers": 1,
+  "artists": 0,
+  "buttons": [{
+      "text": "GitHub",
+      "icon": "github",
+      "href": "https://github.com/LtKst/destructible-terrain"
+    }
+  ]
+}, {
+  "id": 1530731262603,
+  "title": "Astrozone",
+  "description": "A local multiplayer one versus one game",
+  "tags": [
+    "C#",
+    "Unity",
+    "2D",
+    "Team",
+    "Game",
+    "Multiplatform"
+  ],
+  "demo": "project_demos/atrozone.mp4",
+  "status": "Completed",
+  "developers": 2,
+  "artists": 2,
+  "buttons": [{
+      "text": "GitHub",
+      "icon": "github",
+      "href": "https://github.com/LtKst/astrozone"
+    },
+    {
+      "text": "Website",
+      "icon": "globe",
+      "href": "http://22084.hosts.ma-cloud.nl/bewijzenmap/p1.4/idp/expanding-space/"
+    }
+  ]
+}, {
+  "id": 1530731262603,
+  "title": "Angry Birds",
+  "description": "A small segment of <a href='https://www.angrybirds.com/games/'>Angry Birds</a> remade in <a href='https://unity3d.com/'>Unity</a> with C#. Based of <a href='https://youtu.be/yk121puS6iI?t=11' target='_blank'>this segment</a> I learned a lot about working with 2D sprites in this project, I also imrpvoed my C# and Unity knowledge.",
+  "tags": [
+    "C#",
+    "Unity",
+    "2D",
+    "Team",
+    "Game",
+    "Multiplatform"
+  ],
+  "demo": "project_demos/angry_birds.mp4",
+  "status": "Completed",
+  "developers": 3,
+  "artists": 3,
+  "buttons": [{
+      "text": "GitHub",
+      "icon": "github",
+      "href": "https://github.com/LtKst/angry-birds"
+    },
+    {
+      "text": "Website",
+      "icon": "globe",
+      "href": "http://22084.hosts.ma-cloud.nl/bewijzenmap/p2.2/idp/angry-birds/"
+    },
+    {
+      "text": "Download",
+      "icon": "cloud-download",
+      "href": "https://github.com/LtKst/angry-birds/releases"
+    }
+  ]
+}, {
+  "id": 1530731264698,
+  "title": "Game of Life",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid, quod res alia tota est? Quod vestri non item. Tanta vis admonitionis inest in locis; Duo Reges: constructio interrete. Nihil illinc huc pervenit. Dici enim nihil potest verius. Negare non possum. Praeclare hoc quidem. Tibi hoc incredibile, quod beatissimum. Quae sequuntur igitur? Sed haec omittamus; Haeret in salebra. Beatus sibi videtur esse moriens. Ut optime, secundum naturam affectum esse possit. Negare non possum. Sint modo partes vitae beatae. Comprehensum, quod cognitum non habet? Erat enim Polemonis. Et quidem, inquit, vehementer errat; Quare attende, quaeso.",
+  "tags": [
+    "2D",
+    "C++",
+    "Game",
+    "SFML"
+  ],
+  "status": "Completed",
+  "developers": 1,
+  "artists": 0,
+  "demo": "project_demos/game_of_life.mp4",
+  "buttons": [{
+      "text": "GitHub",
+      "icon": "github",
+      "href": "https://github.com/LtKst/sfml-game-of-life"
+    },
+    {
+      "text": "Download",
+      "icon": "cloud-download",
+      "href": "http://ltkst.net/discordanimate/download/discord-animate.zip"
+    }
+  ]
+}]
