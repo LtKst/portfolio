@@ -14,7 +14,7 @@
             <h1>Contact</h1>
         </div>
          <div class="card card-padded">
-            <h5>Send me an email at <a href="mailto:<%= author_info.email %>" target="_top"><%- author_info.email  %></a> or use the contact form below!</h4>
+            <h5>Send me an email at <a href="mailto:<%= author_info.email %>" target="_top"><%- author_info.email %></a> or use the contact form below!</h4>
             <br><br>
             <div class="row">
                <form method="post" action="/mail" class="col l6 m12">
@@ -49,7 +49,7 @@
                      </div>
                   </div>
                   <div class="row">
-                    <div class="g-recaptcha" data-sitekey="6LdORXcUAAAAAN1svlc77P4yb72Eu6Hbuhtmy0XA"></div>
+                    <div class="g-recaptcha" data-sitekey="6LdORXcUAAAAAN1svlc77P4yb72Eu6Hbuhtmy0XA" required></div>
                   </div>
                   <div class="row">
                      <button class="btn waves-effect waves-light valign-wrapper" type="submit" name="action"><i class="material-icons left">send</i>Send</button>

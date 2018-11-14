@@ -5,6 +5,7 @@ const express = require('express');
 const app = express();
 
 const fs = require('fs');
+const request = require('request');
 const bodyParser = require('body-parser');
 
 const nodemailer = require('nodemailer');
@@ -16,6 +17,8 @@ var transporter = nodemailer.createTransport({
     pass: process.env.NODEMAILER_PASSWORD
   }
 });
+
+const secretKey = process.env.CAPTCHA_SECRET
 
 const PORT = process.env.PORT || 3000;
 // #endregion
@@ -83,13 +86,30 @@ app.get('/contact', (function (req, res) {
 }));
 
 app.post('/mail', function (req, res) {
-  let mail = req.body.mail;
+  if(req.body['g-recaptcha-response'] === undefined || req.body['g-recaptcha-response'] === '' || req.body['g-recaptcha-response'] === null)
+  {
+    return res.render('pages/message', {
+      title: 'Captcha required',
+      message: 'Please select Captcha',
+      info: ''
+    });
+  }
+
+  const verificationURL = "https://www.google.com/recaptcha/api/siteverify?secret=" + secretKey + "&response=" + req.body['g-recaptcha-response'] + "&remoteip=" + req.connection.remoteAddress;
+
+  request(verificationURL,function(error,response,body) {
+    body = JSON.parse(body);
+
+    if(body.success !== undefined && !body.success) {
+      return res.json({"responseError" : "Failed captcha verification"});
+    }
+    let mail = req.body.mail;
 
   let mailOptions = {
     from: mail.email,
     to: 'koensparreboom@gmail.com',
-    subject: mail.first_name + ' ' + mail.last_name + ' - ' + mail.subject,
-    text: mail.message
+    subject: mail.subject,
+    text: `Name: ${mail.first_name} ${mail.last_name}\nEmail: ${mail.email}\n\n` + mail.message
   };
 
   transporter.sendMail(mailOptions, function (error, info) {
@@ -106,8 +126,10 @@ app.post('/mail', function (req, res) {
         message: 'Email sent successfully!',
         info: 'Thank you'
       });
-      console.log('Email sent: ' + info.response);
-    }
+        console.log('Email sent: ' + info.response);
+      }
+    });
+    //res.json({"responseSuccess" : "Sucess"});
   });
 });
 // #endregion

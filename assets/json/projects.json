@@ -1,7 +1,7 @@
 [{
   "id": 1530731260850,
   "title": "Saving Private Flint",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid, quod res alia tota est? Quod vestri non item. Tanta vis admonitionis inest in locis; Duo Reges: constructio interrete. Nihil illinc huc pervenit. Dici enim nihil potest verius. Negare non possum. Praeclare hoc quidem. Tibi hoc incredibile, quod beatissimum. Quae sequuntur igitur? Sed haec omittamus; Haeret in salebra. Beatus sibi videtur esse moriens. Ut optime, secundum naturam affectum esse possit. Negare non possum. Sint modo partes vitae beatae. Comprehensum, quod cognitum non habet? Erat enim Polemonis. Et quidem, inquit, vehementer errat; Quare attende, quaeso.",
+  "description": "Saving Private Flint is a 3D adventure/action game, your goal is to defeat and at the same time save your evil brother Flint and his army of woodland creatures he turned evil. Save him and along with it you will save the world!",
   "tags": [
     "3D",
     "Unity",
@@ -27,7 +27,7 @@
 }, {
   "id": 1530731261657,
   "title": "Pictures",
-  "description": "This is a multiplatform minimal picture viewing application made with <a href='https://electronjs.org/'>Electron</a>. The current tested and working platforms are Windows and MacOs. I made this project to improve my JavaScript, Node.js & multiplatform skills. The general styling idea is to make it as minimal as possible, no borders and the top bar disappears.",
+  "description": "Pictures is a multiplatform minimal picture viewing application made with Electron. The current tested and working platforms are Windows and MacOs. I made this project to improve my JavaScript, Node.js & multiplatform skills.<br><br>The general styling idea is to make it as minimal as possible, no borders and the top bar disappears unless locked.",
   "tags": [
     "JavaScript",
     "Node.js",
@@ -47,7 +47,7 @@
 }, {
   "id": 1530731262603,
   "title": "Destructible terrain",
-  "description": "A small game with a dynamic destructible terrain made in C++ with SFML and Box2D. This project was made to further enhance my knowledge of using libraries in C++",
+  "description": "A small game with a dynamic destructible terrain made in C++ and uses the libraries SFML and Box2D. This project was made to further enhance my knowledge of using libraries in C++",
   "tags": [
     "C++",
     "SFML",
@@ -60,15 +60,14 @@
   "developers": 1,
   "artists": 0,
   "buttons": [{
-      "text": "GitHub",
-      "icon": "github",
-      "href": "https://github.com/LtKst/destructible-terrain"
-    }
-  ]
+    "text": "GitHub",
+    "icon": "github",
+    "href": "https://github.com/LtKst/destructible-terrain"
+  }]
 }, {
   "id": 1530731262603,
   "title": "Astrozone",
-  "description": "A local multiplayer one versus one game",
+  "description": "Astrozone is a local multiplayer 1v1 game where you fight for the territories of different planets, fight back and forth for territory until all territories have been taken by the winning player!",
   "tags": [
     "C#",
     "Unity",
@@ -95,7 +94,7 @@
 }, {
   "id": 1530731262603,
   "title": "Angry Birds",
-  "description": "A small segment of <a href='https://www.angrybirds.com/games/'>Angry Birds</a> remade in <a href='https://unity3d.com/'>Unity</a> with C#. Based of <a href='https://youtu.be/yk121puS6iI?t=11' target='_blank'>this segment</a> I learned a lot about working with 2D sprites in this project, I also imrpvoed my C# and Unity knowledge.",
+  "description": "A small segment of Angry Birds remade in Unity with C#, based of <a href='https://youtu.be/yk121puS6iI?t=11' target='_blank'>this segment</a>. I learned a lot about working with 2D sprites in this project, I also improved my C# and Unity knowledge.",
   "tags": [
     "C#",
     "Unity",
@@ -127,7 +126,7 @@
 }, {
   "id": 1530731264698,
   "title": "Game of Life",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid, quod res alia tota est? Quod vestri non item. Tanta vis admonitionis inest in locis; Duo Reges: constructio interrete. Nihil illinc huc pervenit. Dici enim nihil potest verius. Negare non possum. Praeclare hoc quidem. Tibi hoc incredibile, quod beatissimum. Quae sequuntur igitur? Sed haec omittamus; Haeret in salebra. Beatus sibi videtur esse moriens. Ut optime, secundum naturam affectum esse possit. Negare non possum. Sint modo partes vitae beatae. Comprehensum, quod cognitum non habet? Erat enim Polemonis. Et quidem, inquit, vehementer errat; Quare attende, quaeso.",
+  "description": "Conway's game of life made in C++, this project was made to improve my knowledge of working with object orientated C++ and the SFML graphics library.",
   "tags": [
     "2D",
     "C++",
