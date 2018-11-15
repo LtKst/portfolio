@@ -2,9 +2,7 @@
 require('dotenv').config();
 
 const express = require('express');
-var secure = require('express-force-https');
 const app = express();
-app.use(secure);
 
 const fs = require('fs');
 const request = require('request');
