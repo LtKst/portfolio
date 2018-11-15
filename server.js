@@ -2,7 +2,9 @@
 require('dotenv').config();
 
 const express = require('express');
+var secure = require('express-force-https');
 const app = express();
+app.use(secure);
 
 const fs = require('fs');
 const request = require('request');
@@ -109,7 +111,7 @@ app.post('/mail', function (req, res) {
     from: mail.email,
     to: 'koensparreboom@gmail.com',
     subject: mail.subject,
-    text: `Name: ${mail.first_name} ${mail.last_name}\nEmail: ${mail.email}\n\n` + mail.message
+    text: `Name: ${mail.first_name} ${mail.last_name}\nEmail: ${mail.email}\n\n${mail.message}`
   };
 
   transporter.sendMail(mailOptions, function (error, info) {
